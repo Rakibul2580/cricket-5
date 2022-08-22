@@ -49,10 +49,15 @@ ol#members li br {
     align-items: center;
     font-size: 20px;
 }
-.calculate input {
+.calculate p input {
     padding: 6px;
     background: none;
     border: 2px solid #fff;
     width: 133px;
+    color: #fff;
     border-radius: 5px;
+}
+
+.hi{
+    color: #fff;
 }
