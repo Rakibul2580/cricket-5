@@ -1,19 +1,18 @@
-function teamMembersName(btn){
-    const name = btn.parentNode.children[0].innerText
-    membersName.push(name);
-    teamMembersList()
-    btn.disabled = 'true'
-}
-
 let membersName = [];
-function teamMembersList(){
-    if(membersName.length <= 5){
+function teamMembersName(element){
+    if(membersName.length <= 4){
+        const name = element.parentNode.children[0].innerText
+        membersName.push(name);
+        
         const teamMembers = document.getElementById('members')
         const li = document.createElement('li')
+        
         for(let i = 0; i < membersName.length; i++){
             li.innerText = `${membersName[i]}`
         }
+        
         teamMembers.appendChild(li)
+        element.disabled = 'true'
     }else{
         alert('Already 5 Players Selected')
     }
@@ -42,7 +41,6 @@ document.getElementById('total-calculate').addEventListener('click', function(){
     
     const manager = stringValue('manager')
     const coach = stringValue('coach')
-    
     const totalExpenses = expensesNumber + manager + coach
 
     const total = document.getElementById('total')
