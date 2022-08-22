@@ -1,0 +1,38 @@
+body{
+    background: #474747;
+    margin: 0;
+    padding: 0;
+}
+.banear{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/Bangladesh-gfx.jpg);
+    padding: 190px 0;
+}
+.banear h1{
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(186, 165, 172);
+    text-align: center;
+} 
+.banear p{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.card{
+    margin: 20px 0;
+}
+.card img{
+    height: 250px;
+}
+
+
+ol#members li br {
+    display: none;
+}
