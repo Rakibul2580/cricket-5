@@ -3,7 +3,6 @@ function teamMembersName(btn){
     membersName.push(name);
     teamMembersList()
     btn.disabled = 'true'
-    console.log(membersName)
 }
 
 let membersName = [];
