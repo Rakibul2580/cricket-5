@@ -9,12 +9,12 @@
     <title>Bangladesh cricket team</title>
 </head>
 <body>
-    <!-- <header>
+    <header>
         <div class="banear">
             <h1>Bangladesh cricket team</h1>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-    </header> -->
+    </header>
     <main>
         <div class="card-area">
             <div class="container">
@@ -28,7 +28,7 @@
                                         <div class="card-body text-center">
                                           <h5 class="card-title">Mushfiqur Rahim</h5>
                                           <p class="card-text">Bangladesh</p>
-                                          <a href="#" onclick="teamMembersName(this)" class="btn btn-primary w-100">Go somewhere</a>
+                                          <button onclick="teamMembersName(this)" class="btn btn-primary w-100">SELECT</button>
                                         </div>
                                       </div>
                                 </div>
@@ -38,8 +38,7 @@
                                         <div class="card-body text-center">
                                           <h5 class="card-title">Shakib Al Hasan</h5>
                                           <p class="card-text">Bangladesh</p>
-                                          <button onclick="teamMembersName(this)" id="hi" class="btn btn-primary w-100">SELECT</button>
-                                          <a href="#" onclick="teamMembersName(this)" disabled class="btn btn-primary w-100">Go somewhere</a>
+                                          <button onclick="teamMembersName(this)" class="btn btn-primary w-100">SELECT</button>
                                         </div>
                                       </div>
                                 </div>
@@ -49,7 +48,7 @@
                                         <div class="card-body text-center">
                                           <h5 class="card-title">Mashrafe Mortaza</h5>
                                           <p class="card-text">Bangladesh</p>
-                                          <a href="#" onclick="teamMembersName(this)" class="btn btn-primary w-100">Go somewhere</a>
+                                          <button onclick="teamMembersName(this)" class="btn btn-primary w-100">SELECT</button>
                                         </div>
                                       </div>
                                 </div>
@@ -59,7 +58,7 @@
                                         <div class="card-body text-center">
                                           <h5 class="card-title">Rubel Hossain</h5>
                                           <p class="card-text">Bangladesh</p>
-                                          <a href="#" onclick="teamMembersName(this)" class="btn btn-primary w-100">Go somewhere</a>
+                                          <button onclick="teamMembersName(this)" class="btn btn-primary w-100">SELECT</button>
                                         </div>
                                       </div>
                                 </div>
@@ -69,7 +68,7 @@
                                         <div class="card-body text-center">
                                           <h5 class="card-title">Tamim Iqbal</h5>
                                           <p class="card-text">Bangladesh</p>
-                                          <a href="#" onclick="teamMembersName(this)" class="btn btn-primary w-100">Go somewhere</a>
+                                          <button onclick="teamMembersName(this)" class="btn btn-primary w-100">SELECT</button>
                                         </div>
                                       </div>
                                 </div>
@@ -80,17 +79,27 @@
                                           <h5 class="card-title">
                                             Mustafizur Rahman</h5>
                                           <p class="card-text">Bangladesh</p>
-                                          <a href="#" onclick="teamMembersName(this)" class="btn btn-primary w-100">Go somewhere</a>
+                                          <button onclick="teamMembersName(this)" class="btn btn-primary w-100">SELECT</button>
                                         </div>
                                       </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="bg-secondary p-2 my-4 rounded">
-                                <h1>Selected - V</h1>
+                            <div class="bg-secondary p-4 my-4 rounded text-white">
+                                <h1 class="text-center">Selected - V</h1>
                                 <ol id="members"></ol>
                             </div>
+                            <div class="bg-secondary p-4 my-4 rounded calculate text-white">
+                              <h1 class="text-center">Budget</h1>
+                              <p>Per Player <input type="text" name="" id="per-player"></p>
+                              <button class="btn btn-primary w-100" id="calculate">SELECT</button>
+                              <h3>Player Expenses <span id="expenses">0</span></h3>
+                              <p>Manager <input type="text" name="" id="manager"></p>
+                              <p>Coach <input type="text" name="" id="coach"></p>
+                              <button class="btn btn-primary w-100" id="total-calculate">SELECT</button>
+                              <h3>Total <span id="total"></span></h3>
+                          </div>
                         </div>
                     </div>
                 </div>

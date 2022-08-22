@@ -32,7 +32,27 @@ body{
     height: 250px;
 }
 
-
+ol#members li {
+    margin-top: 22px;
+    font-size: 20px;
+}
 ol#members li br {
     display: none;
+}
+
+.calculate h3{
+    margin: 20px 0;
+}
+.calculate p {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    align-items: center;
+    font-size: 20px;
+}
+.calculate input {
+    padding: 6px;
+    background: none;
+    border: 2px solid #fff;
+    width: 133px;
 }
