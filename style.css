@@ -1,6 +1,8 @@
 body{
     background: #474747;
 }
+
+/* banear-area */
 .banear{
     background-size: cover;
     background-position: center;
@@ -22,6 +24,7 @@ body{
     margin-top: 20px;
 }
 
+/* card-area */
 .card{
     margin: 20px 0;
 }
@@ -33,9 +36,8 @@ ol#members li {
     margin-top: 22px;
     font-size: 20px;
 }
-ol#members li br {
-    display: none;
-}
+
+/* calculate-area */
 .calculate p {
     display: flex;
     justify-content: space-between;

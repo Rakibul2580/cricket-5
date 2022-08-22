@@ -1,3 +1,4 @@
+// Team Members
 let membersName = [];
 function teamMembersName(element){
     if(membersName.length <= 4){
@@ -18,6 +19,7 @@ function teamMembersName(element){
     }
 }
 
+// per-player
 function stringValue(elementId){
     const elementValue = document.getElementById(elementId)
     const elementValueString = elementValue.value
@@ -27,13 +29,13 @@ function stringValue(elementId){
 }
 document.getElementById('calculate').addEventListener('click', function(){
     const player = stringValue('per-player')
-    const players = player * membersName.length
-
-    const expenses = document.getElementById('expenses')
-    expenses.innerText = players
-    player.value = ''
+        const players = player * membersName.length
+        const expenses = document.getElementById('expenses')
+        expenses.innerText = players
+        player.value = ''
 })
 
+// total-calculate
 document.getElementById('total-calculate').addEventListener('click', function(){
     const expenses = document.getElementById('expenses')
     const expensesString = expenses.innerText
