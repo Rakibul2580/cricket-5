@@ -24,7 +24,6 @@ body{
     margin-top: 20px;
 }
 
-
 .card{
     margin: 20px 0;
 }
@@ -55,4 +54,5 @@ ol#members li br {
     background: none;
     border: 2px solid #fff;
     width: 133px;
+    border-radius: 5px;
 }

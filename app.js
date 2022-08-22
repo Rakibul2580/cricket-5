@@ -12,13 +12,11 @@ function teamMembersList(){
         const teamMembers = document.getElementById('members')
         const li = document.createElement('li')
         for(let i = 0; i < membersName.length; i++){
-            li.innerText = `
-            ${membersName[i]}
-            `
+            li.innerText = `${membersName[i]}`
         }
         teamMembers.appendChild(li)
     }else{
-        alert('Full')
+        alert('Already 5 Players Selected')
     }
 }
 
@@ -26,6 +24,7 @@ function stringValue(elementId){
     const elementValue = document.getElementById(elementId)
     const elementValueString = elementValue.value
     const elementValueNumber = parseFloat(elementValueString)
+    elementValueNumber.value = '';
     return elementValueNumber;
 }
 document.getElementById('calculate').addEventListener('click', function(){
@@ -38,19 +37,16 @@ document.getElementById('calculate').addEventListener('click', function(){
 })
 
 document.getElementById('total-calculate').addEventListener('click', function(){
-    const expensess = stringValue('expenses')
-    const expensesString = expensess.innerText
-    const expensesNumber = parent(expensesString)
-console.log(expensesNumber)
-    // const manager = stringValue('manager')
-    // const coach = stringValue('coach')
+    const expenses = document.getElementById('expenses')
+    const expensesString = expenses.innerText
+    const expensesNumber = parseInt(expensesString)
+    
+    const manager = stringValue('manager')
+    const coach = stringValue('coach')
+    
+    const totalExpenses = expensesNumber + manager + coach
 
-    // const totalExpenses = expensesNumber + manager + coach
-
-    // const total = document.getElementById('total')
-    // total.innerText = totalExpenses
-    // expenses.value = ''
-    // manager.value = ''
-    // coach.value = ''
+    const total = document.getElementById('total')
+    total.innerText = totalExpenses
 
 })
