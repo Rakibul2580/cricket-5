@@ -67,4 +67,5 @@ ol#members li {
     width: 133px;
     color: #ffffff;
     border-radius: 5px;
+    outline: none;
 }
