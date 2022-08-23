@@ -38,6 +38,9 @@ ol#members li {
 }
 
 /* calculate-area */
+.bg-dark{
+    background: #000000!important;
+}
 .calculate p {
     display: flex;
     justify-content: space-between;
