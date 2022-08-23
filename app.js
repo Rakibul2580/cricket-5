@@ -1,4 +1,4 @@
-// Team Members
+// Team Members Name
 let membersName = [];
 function teamMembersName(element){
     if(membersName.length <= 4){
@@ -11,41 +11,49 @@ function teamMembersName(element){
         for(let i = 0; i < membersName.length; i++){
             li.innerText = `${membersName[i]}`
         }
-        
+
         teamMembers.appendChild(li)
         element.disabled = 'true'
     }else{
         alert('Already 5 Players Selected')
     }
 }
-
-// per-player
+// String to Number
 function stringValue(elementId){
     const elementValue = document.getElementById(elementId)
     const elementValueString = elementValue.value
     const elementValueNumber = parseFloat(elementValueString)
-    elementValueNumber.value = '';
+    elementValue.value = '';
     return elementValueNumber;
 }
+
+// per-player cost
 document.getElementById('calculate').addEventListener('click', function(){
     const player = stringValue('per-player')
+    if(player >= 0){
         const players = player * membersName.length
         const expenses = document.getElementById('expenses')
         expenses.innerText = players
-        player.value = ''
+    }else{
+        alert('please enter tha number type variable')
+    }
 })
 
 // total-calculate
 document.getElementById('total-calculate').addEventListener('click', function(){
     const expenses = document.getElementById('expenses')
     const expensesString = expenses.innerText
-    const expensesNumber = parseInt(expensesString)
+    const expensesNumber = parseFloat(expensesString)
     
     const manager = stringValue('manager')
     const coach = stringValue('coach')
-    const totalExpenses = expensesNumber + manager + coach
+    if(expensesNumber >= 0 && manager >= 0 && coach >= 0){
+        const totalExpenses = expensesNumber + manager + coach
 
-    const total = document.getElementById('total')
-    total.innerText = totalExpenses
+        const total = document.getElementById('total')
+        total.innerText = totalExpenses
+    }else{
+        alert('please enter tha number type variable')
+    }
 
 })
